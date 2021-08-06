@@ -64,15 +64,12 @@ footer {
   color: var(--very-dark-cyan);
 }
 
-.main__section .cards .card img {
-  width: 3.75rem;
+.hidden {
+  visibility: hidden;
 }
 
-
-/* Utilities */
-
-.hidden {
-  display: none;
+.main__section .cards .card img {
+  width: 3.75rem;
 }
 
 .container {
