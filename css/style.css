@@ -27,6 +27,7 @@
 body {
   font-family: 'Lexend Deca', sans-serif;
   font-size: 0.9375rem;
+  font-weight: 400;
   color: var(--very-light-gray);
   line-height: 1.5;
 }
@@ -35,6 +36,7 @@ h2 {
   font-family: 'Big Shoulders Display', cursive;
   text-transform: uppercase;
   font-size: 2.5rem;
+  font-weight: 700;
 }
 
 p {
@@ -50,8 +52,12 @@ button {
   max-width: 9rem;
   padding: 1rem 2rem;
   cursor: pointer;
-  border: none;
+  border: 2px solid var(--very-light-gray);
   border-radius: 3.125rem;
+}
+
+button:hover {
+  color: var(--very-light-gray);
 }
 
 footer {
@@ -107,12 +113,24 @@ footer {
   color: var(--bright-orange);
 }
 
+.btn__orange:hover{
+  background-color: var(--bright-orange);
+}
+
 .btn__dark-cyan {
   color: var(--dark-cyan)
 }
 
+.btn__dark-cyan:hover {
+  background-color: var(--dark-cyan);
+}
+
 .btn__very-dark-cyan {
   color: var(--very-dark-cyan);
+}
+
+.btn__very-dark-cyan:hover {
+  background-color: var(--very-dark-cyan);
 }
 
 /* Media Queries - Copying Bootstrap breakpoints for the first time, for study purposes */
@@ -137,6 +155,7 @@ footer {
   
   p {
     margin-bottom: 4rem;
+    font-size: 1rem;
   }
 
   .container {
@@ -144,7 +163,7 @@ footer {
   }
 
   .card {
-    padding: 4rem 4rem;
+    padding: 4rem 4.5rem;
   }
 
   .cards {
