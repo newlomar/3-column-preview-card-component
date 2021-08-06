@@ -30,6 +30,7 @@ body {
   font-weight: 400;
   color: var(--very-light-gray);
   line-height: 1.5;
+  background-color: var(--very-light-gray);
 }
 
 h2 {
