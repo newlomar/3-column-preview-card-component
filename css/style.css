@@ -26,24 +26,88 @@
 
 body {
   font-family: 'Lexend Deca', sans-serif;
-  font-size: 0,9375rem;
-  color: #fff;
+  font-size: 0.9375rem;
+  color: var(--very-light-gray);
   line-height: 1.5;
 }
 
 h2 {
   font-family: 'Big Shoulders Display', cursive;
+  text-transform: uppercase;
+  font-size: 2.5rem;
 }
+
+p {
+  color: var(--transparent-white);
+}
+
+button {
+  font-family: 'Lexend Deca', sans-serif;
+  display: inline-block;
+  background-color: var(--very-light-gray);
+  color: var(--bright-orange);
+  max-width: 9rem;
+  padding: 1rem 2rem;
+  cursor: pointer;
+  border: none;
+  border-radius: 3.125rem;
+}
+
+.main__section .cards .card img {
+  width: 3.75rem;
+}
+
 
 /* Utilities */
 
+.hidden {
+  display: none;
+}
+
 .container {
-  max-width: 360px;
+  max-width: 320px;
+  margin: 4rem auto;
 }
 
 .cards {
   display: flex;
-  
+  flex-direction: column;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  gap: 1.875rem;
+  padding: 2.5rem;
+  background-color: var(--bright-orange);
+}
+
+.card__orange {
+  border-top-left-radius: 0.625rem;
+  border-top-right-radius: 0.625rem;
+  background-color: var(--bright-orange)
+}
+
+.card__dark-cyan {
+  background-color: var(--dark-cyan);
+}
+
+.card__very-dark-cyan {
+  background-color: var(--very-dark-cyan);
+  border-bottom-left-radius: 0.625rem;
+  border-bottom-right-radius: 0.625rem;
+}
+
+.btn__orange {
+  color: var(--bright-orange);
+}
+
+.btn__dark-cyan {
+  color: var(--dark-cyan)
+}
+
+.btn__very-dark-cyan {
+  color: var(--very-dark-cyan);
 }
 
 /* Media Queries - Copying Bootstrap breakpoints for the first time, for study purposes */
