@@ -115,6 +115,18 @@ footer {
   background-color: var(--bright-orange);
 }
 
+.btn__orange:focus-visible {
+  color: var(--very-light-gray);
+  outline: none;
+  background-color: var(--bright-orange);
+}
+
+.btn__orange:focus:not(:focus-visible) {
+  color: var(--very-light-gray);
+  outline: none;
+  background-color: var(--bright-orange);
+}
+
 .btn__dark-cyan {
   color: var(--dark-cyan)
 }
@@ -123,11 +135,35 @@ footer {
   background-color: var(--dark-cyan);
 }
 
+.btn__dark-cyan:focus-visible {
+  color: var(--very-light-gray);
+  outline: none;
+  background-color: var(--dark-cyan);
+}
+
+.btn__dark-cyan:focus:not(:focus-visible) {
+  color: var(--very-light-gray);
+  outline: none;
+  background-color: var(--dark-cyan);
+}
+
 .btn__very-dark-cyan {
   color: var(--very-dark-cyan);
 }
 
 .btn__very-dark-cyan:hover {
+  background-color: var(--very-dark-cyan);
+}
+
+.btn__very-dark-cyan:focus-visible {
+  color: var(--very-light-gray);
+  outline: none;
+  background-color: var(--very-dark-cyan);
+}
+
+.btn__very-dark-cyan:focus:not(:focus-visible) {
+  color: var(--very-light-gray);
+  outline: none;
   background-color: var(--very-dark-cyan);
 }
 
