@@ -97,13 +97,15 @@ footer {
   font-family: 'Lexend Deca', sans-serif;
   display: inline-block;
   text-decoration: none;
+  text-align: center;
   background-color: var(--very-light-gray);
   color: var(--bright-orange);
   max-width: 10rem;
-  padding: 1rem 2rem;
+  padding: 0.8rem 1rem;
   cursor: pointer;
   border: 2px solid var(--very-light-gray);
   border-radius: 3.125rem;
+  font-weight: 400;
 }
 
 .card a:hover {
