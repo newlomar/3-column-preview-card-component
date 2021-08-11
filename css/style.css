@@ -47,22 +47,6 @@ p {
   line-height: 1.7;
 }
 
-button {
-  font-family: 'Lexend Deca', sans-serif;
-  display: inline-block;
-  background-color: var(--very-light-gray);
-  color: var(--bright-orange);
-  max-width: 9rem;
-  padding: 1rem 2rem;
-  cursor: pointer;
-  border: 2px solid var(--very-light-gray);
-  border-radius: 3.125rem;
-}
-
-button:hover {
-  color: var(--very-light-gray);
-}
-
 footer {
   color: var(--very-dark-cyan);
 }
@@ -109,27 +93,32 @@ footer {
   border-bottom-right-radius: 0.625rem;
 }
 
+.card a {
+  font-family: 'Lexend Deca', sans-serif;
+  display: inline-block;
+  text-decoration: none;
+  background-color: var(--very-light-gray);
+  color: var(--bright-orange);
+  max-width: 10rem;
+  padding: 1rem 2rem;
+  cursor: pointer;
+  border: 2px solid var(--very-light-gray);
+  border-radius: 3.125rem;
+}
+
+.card a:hover {
+  color: var(--very-light-gray);
+}
+
 .btn__orange {
   color: var(--bright-orange);
 }
 
-.btn__orange:hover{
+.card  .btn__orange:hover{
   background-color: var(--bright-orange);
 }
 
-.btn__orange:focus-visible {
-  color: var(--very-light-gray);
-  outline: none;
-  background-color: var(--bright-orange);
-}
-
-.btn__orange:focus:not(:focus-visible) {
-  color: var(--very-light-gray);
-  outline: none;
-  background-color: var(--bright-orange);
-}
-
-.btn__dark-cyan {
+.card .btn__dark-cyan {
   color: var(--dark-cyan)
 }
 
@@ -137,36 +126,17 @@ footer {
   background-color: var(--dark-cyan);
 }
 
-.btn__dark-cyan:focus-visible {
-  color: var(--very-light-gray);
-  outline: none;
-  background-color: var(--dark-cyan);
-}
-
-.btn__dark-cyan:focus:not(:focus-visible) {
-  color: var(--very-light-gray);
-  outline: none;
-  background-color: var(--dark-cyan);
-}
-
-.btn__very-dark-cyan {
+.card .btn__very-dark-cyan {
   color: var(--very-dark-cyan);
 }
 
-.btn__very-dark-cyan:hover {
+.card .btn__very-dark-cyan:hover {
   background-color: var(--very-dark-cyan);
 }
 
-.btn__very-dark-cyan:focus-visible {
-  color: var(--very-light-gray);
-  outline: none;
-  background-color: var(--very-dark-cyan);
-}
-
-.btn__very-dark-cyan:focus:not(:focus-visible) {
-  color: var(--very-light-gray);
-  outline: none;
-  background-color: var(--very-dark-cyan);
+:focus {
+  outline: 3px solid red;
+  outline-offset: 5px;
 }
 
 /* Media Queries - Copying Bootstrap breakpoints for the first time, for study purposes */
